@@ -104,7 +104,7 @@ class _VideoDetailScreenState extends State<VideoDetailScreen> {
                         Colors.blueGrey,
                       ),
                       const SizedBox(width: 8),
-                      _buildInfoChip(widget.video.duration, Colors.purple),
+                      _buildInfoChip(widget.video.releaseDate, Colors.purple),
                     ],
                   ),
 
