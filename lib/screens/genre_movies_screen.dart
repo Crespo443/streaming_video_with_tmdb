@@ -12,7 +12,7 @@ class GenreMoviesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final videoProvider = Provider.of<VideoProvider>(context);
-    final List<Video> movies = videoProvider.getVideosByCategory(genreName);
+    final List<VideoModel> movies = videoProvider.getVideosByCategory(genreName);
 
     return Scaffold(
       appBar: AppBar(

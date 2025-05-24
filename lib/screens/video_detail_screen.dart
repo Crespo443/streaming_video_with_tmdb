@@ -100,7 +100,7 @@ class _VideoDetailScreenState extends State<VideoDetailScreen> {
                       ),
                       const SizedBox(width: 8),
                       _buildInfoChip(
-                        widget.video.categories.join(),
+                        widget.video.categories.take(2).join(', '),
                         Colors.blueGrey,
                       ),
                       const SizedBox(width: 8),

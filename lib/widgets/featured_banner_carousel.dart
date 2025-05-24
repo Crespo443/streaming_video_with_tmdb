@@ -110,7 +110,7 @@ class _FeaturedBannerCarouselState extends State<FeaturedBannerCarousel> {
               
               Positioned.fill(
                 child: CachedNetworkImage(
-                  imageUrl: video.thumbnailUrl,
+                  imageUrl: (video.backdrop_path != null && video.backdrop_path.isNotEmpty) ? video.backdrop_path : video.thumbnailUrl,
                   fit: BoxFit.cover,
                   placeholder:
                       (context, url) => Container(

@@ -12,7 +12,7 @@ class VideoCard extends StatefulWidget {
   const VideoCard({
     super.key,
     required this.video,
-    this.width = 130, 
+    this.width = 130,
     this.height = 200,
     this.showTitle = true,
   });
@@ -46,7 +46,7 @@ class _VideoCardState extends State<VideoCard> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               AspectRatio(
-                aspectRatio: 2 / 3, 
+                aspectRatio: 2 / 3,
                 child: CachedNetworkImage(
                   imageUrl: widget.video.thumbnailUrl,
                   fit: BoxFit.cover,

@@ -18,18 +18,6 @@ class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
   final TextEditingController _searchController = TextEditingController();
   bool _isSearching = false;
-  // final List<String> _categoriesToShow = [
-  //   'Trending',
-  //   'Action',
-  //   'Comedy',
-  //   'Sci-Fi',
-  //   'Documentary',
-  //   'Animation',
-  //   'Romance',
-  //   'Thriller',
-  //   'Technology',
-  //   'Featured',
-  // ];
 
   @override
   void dispose() {
@@ -121,17 +109,12 @@ class _HomeScreenState extends State<HomeScreen> {
         .getVideosByCategory('Featured');
 
     if (potentialFeaturedVideos.isNotEmpty) {
-      carouselVideos =
-          potentialFeaturedVideos
-              .take(5)
-              .toList(); // Ambil maks 5 dari "Featured"
+      carouselVideos = potentialFeaturedVideos.take(5).toList();
     } else if (videoProvider.allVideos.isNotEmpty) {
-      // Fallback ke beberapa video pertama jika "Featured" kosong atau tidak ada
       carouselVideos = videoProvider.allVideos.take(5).toList();
     } else {
       carouselVideos = [];
     }
-
     final List<String> categoriesForRows = videoProvider.getCategories();
 
     return Scaffold(
