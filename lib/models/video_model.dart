@@ -28,15 +28,14 @@ class VideoModel extends HiveObject {
   @HiveField(7)
   final String type;
 
-
   @HiveField(8)
-  final double rating;
+  final String duration;
 
   @HiveField(9)
-  final List<String> tags;
+  final double rating;
 
   @HiveField(10)
-  final String releaseDate;
+  final List<String> tags;
 
   VideoModel({
     required this.id,
@@ -47,9 +46,9 @@ class VideoModel extends HiveObject {
     required this.videoUrl,
     required this.categories,
     required this.type,
+    required this.duration,
     required this.rating,
     required this.tags,
-    required this.releaseDate,
   });
 
   factory VideoModel.fromJson(Map<String, dynamic> json) {
@@ -62,11 +61,11 @@ class VideoModel extends HiveObject {
       videoUrl: json['videoUrl'] as String,
       categories: List<String>.from(json['categories'] as List),
       type: json['type'] as String,
+      duration: json['duration'] as String,
 
       rating: (json['rating'] as num).toDouble(),
 
       tags: List<String>.from(json['tags'] as List),
-      releaseDate: json['releaseDate'] as String,
     );
   }
 
@@ -80,9 +79,9 @@ class VideoModel extends HiveObject {
       'videoUrl': videoUrl,
       'categories': categories,
       'type': type,
+      'duration': duration,
       'rating': rating,
       'tags': tags,
-      'releaseDate': releaseDate,
     };
   }
 }

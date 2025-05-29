@@ -6,9 +6,16 @@
     "thumbnailUrl": "https://image.tmdb.org/t/p/original/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg",
     "backdrop_path": "https://image.tmdb.org/t/p/original/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-    "categories": ["Featured","Family", "Comedy", "Adventure", "Fantasy"],
+    "categories": [
+      "Featured",
+      "Family",
+      "Comedy",
+      "Adventure",
+      "Fantasy",
+      "Action"
+    ],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.25,
     "tags": ["family", "comedy", "adventure", "fantasy", "action"]
   },
@@ -19,9 +26,9 @@
     "thumbnailUrl": "https://image.tmdb.org/t/p/original/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
     "backdrop_path": "https://image.tmdb.org/t/p/original/j0NUh5irX7q2jIRtbLo8TZyRn6y.jpg",
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-    "categories": ["Horror", "Mystery"],
+    "categories": ["Featured", "Horror", "Mystery"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.5585,
     "tags": ["horror", "mystery"]
   },
@@ -34,7 +41,7 @@
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "categories": ["Family", "Fantasy"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 2.1525,
     "tags": ["family", "fantasy"]
   },
@@ -47,7 +54,7 @@
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "categories": ["War", "Action"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.6215,
     "tags": ["war", "action"]
   },
@@ -58,9 +65,9 @@
     "thumbnailUrl": "https://image.tmdb.org/t/p/original/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
     "backdrop_path": "https://image.tmdb.org/t/p/original/1p5aI299YBnqrEEvVGJERk2MXXb.jpg",
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-    "categories": ["Featured","Action", "Adventure", "Thriller"],
+    "categories": ["Action", "Adventure", "Thriller"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.55,
     "tags": ["action", "adventure", "thriller"]
   },
@@ -71,9 +78,9 @@
     "thumbnailUrl": "https://image.tmdb.org/t/p/original/lFFDrFLXywFhy6khHes1LCFVMsL.jpg",
     "backdrop_path": "https://image.tmdb.org/t/p/original/jRvhP4AfFnJ03lCQhp1fie7XPSd.jpg",
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-    "categories": ["Featured","Action", "Thriller"],
+    "categories": ["Action", "Thriller"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 2.607,
     "tags": ["action", "thriller"]
   },
@@ -84,9 +91,9 @@
     "thumbnailUrl": "https://image.tmdb.org/t/p/original/tUae3mefrDVTgm5mRzqWnZK6fOP.jpg",
     "backdrop_path": "https://image.tmdb.org/t/p/original/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg",
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-    "categories": ["Family", "Comedy", "Science Fiction"],
+    "categories": ["Featured", "Comedy", "Science Fiction"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.55,
     "tags": ["family", "comedy", "science fiction"]
   },
@@ -97,9 +104,9 @@
     "thumbnailUrl": "https://image.tmdb.org/t/p/original/vWNVHtwOhcoOEUSrY1iHRGbgH8O.jpg",
     "backdrop_path": "https://image.tmdb.org/t/p/original/bIh56F8e5EaZ3r2nD1hXAOisItZ.jpg",
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-    "categories": ["Featured", "Family", "Documentary"],
+    "categories": ["Adventure", "Family", "Documentary"],
     "type": "movie",
-    "releaseDate": "2024",
+    "duration": "Unknown",
     "rating": 2.9775,
     "tags": ["adventure", "family", "documentary"]
   },
@@ -112,7 +119,7 @@
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "categories": ["Action", "Science Fiction", "Adventure"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.739,
     "tags": ["action", "science fiction", "adventure"]
   },
@@ -125,7 +132,7 @@
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "categories": ["Thriller", "Action"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.3445,
     "tags": ["thriller", "action"]
   },
@@ -138,7 +145,7 @@
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "categories": ["Action", "Crime", "Thriller", "Drama"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.4165,
     "tags": ["action", "crime", "thriller", "drama"]
   },
@@ -151,7 +158,7 @@
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "categories": ["Action", "Fantasy", "Adventure"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.1915,
     "tags": ["action", "fantasy", "adventure"]
   },
@@ -164,7 +171,7 @@
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "categories": ["Action", "Thriller"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.39,
     "tags": ["action", "thriller"]
   },
@@ -177,7 +184,7 @@
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "categories": ["Fantasy", "Adventure", "Family"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.0085,
     "tags": ["fantasy", "adventure", "family"]
   },
@@ -190,7 +197,7 @@
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "categories": ["Horror", "Thriller"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.8,
     "tags": ["horror", "thriller"]
   },
@@ -203,7 +210,7 @@
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "categories": ["Western"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.1825,
     "tags": ["western"]
   },
@@ -216,7 +223,7 @@
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "categories": ["Action", "Crime", "Thriller"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.2635,
     "tags": ["action", "crime", "thriller"]
   },
@@ -229,7 +236,7 @@
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "categories": ["Horror"],
     "type": "movie",
-    "releaseDate": "2000",
+    "duration": "Unknown",
     "rating": 3.3085,
     "tags": ["horror"]
   },
@@ -242,7 +249,7 @@
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "categories": ["Action", "Adventure", "Drama"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.85,
     "tags": ["action", "adventure", "drama"]
   },
@@ -255,7 +262,7 @@
     "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     "categories": ["Horror", "Fantasy", "Comedy"],
     "type": "movie",
-    "releaseDate": "2025",
+    "duration": "Unknown",
     "rating": 3.25,
     "tags": ["horror", "fantasy", "comedy"]
   }

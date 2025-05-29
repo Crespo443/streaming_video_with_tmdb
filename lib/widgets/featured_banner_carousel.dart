@@ -14,7 +14,7 @@ class FeaturedBannerCarousel extends StatefulWidget {
 
 class _FeaturedBannerCarouselState extends State<FeaturedBannerCarousel> {
   final PageController _pageController = PageController(
-    viewportFraction: 0.9,
+    viewportFraction: 0.9, 
     initialPage: 0,
   );
   int _currentPage = 0;
@@ -104,16 +104,13 @@ class _FeaturedBannerCarouselState extends State<FeaturedBannerCarousel> {
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: horizontalPadding),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(5.0),
+          borderRadius: BorderRadius.circular(12.0),
           child: Stack(
             children: [
+              
               Positioned.fill(
                 child: CachedNetworkImage(
-                  imageUrl:
-                      (video.backdrop_path != null &&
-                              video.backdrop_path.isNotEmpty)
-                          ? video.backdrop_path
-                          : video.thumbnailUrl,
+                  imageUrl: (video.backdropPath != null && video.backdropPath!.isNotEmpty) ? video.backdropPath! : video.thumbnailUrl,
                   fit: BoxFit.cover,
                   placeholder:
                       (context, url) => Container(
@@ -126,12 +123,12 @@ class _FeaturedBannerCarouselState extends State<FeaturedBannerCarousel> {
                       ),
                   errorWidget:
                       (context, url, error) => Image.asset(
-                        'assets/images/placeholder.png',
+                        'assets/images/placeholder.png', 
                         fit: BoxFit.cover,
                       ),
                 ),
               ),
-
+              
               Positioned.fill(
                 child: Container(
                   decoration: BoxDecoration(
@@ -148,7 +145,7 @@ class _FeaturedBannerCarouselState extends State<FeaturedBannerCarousel> {
                   ),
                 ),
               ),
-
+              
               Positioned(
                 bottom: 20,
                 left: 16,
@@ -225,6 +222,7 @@ class _FeaturedBannerCarouselState extends State<FeaturedBannerCarousel> {
             width: _currentPage == index ? 12.0 : 8.0,
             height: _currentPage == index ? 12.0 : 8.0,
             decoration: BoxDecoration(
+              
               borderRadius: BorderRadius.circular(
                 _currentPage == index ? 6 : 4,
               ),

@@ -12,7 +12,7 @@ class VideoCard extends StatefulWidget {
   const VideoCard({
     super.key,
     required this.video,
-    this.width = 130,
+    this.width = 130, 
     this.height = 200,
     this.showTitle = true,
   });
@@ -47,25 +47,39 @@ class _VideoCardState extends State<VideoCard> {
             children: [
               AspectRatio(
                 aspectRatio: 2 / 3,
-                child: CachedNetworkImage(
-                  imageUrl: widget.video.thumbnailUrl,
-                  fit: BoxFit.cover,
-                  placeholder:
-                      (context, url) => Container(
-                        color: Colors.grey[800],
-                        child: const Center(
-                          child: CircularProgressIndicator(
-                            color: Colors.deepOrange,
-                          ),
-                        ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8.0), // Optional: for rounded corners on image
+                  child: CachedNetworkImage(
+                    imageUrl: widget.video.thumbnailUrl,
+                    fit: BoxFit.cover,
+                    placeholder: (context, url) => Container(
+                      color: Colors.grey[800],
+                      child: const Center(
+                        child: CircularProgressIndicator(color: Colors.deepOrange),
                       ),
-                  errorWidget:
-                      (context, url, error) => Image.asset(
-                        'assets/images/placeholder.png',
-                        fit: BoxFit.cover,
-                      ),
+                    ),
+                    errorWidget: (context, url, error) => Image.asset(
+                      'assets/images/placeholder.png',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
               ),
+              if (widget.showTitle)
+                Padding(
+                  padding: const EdgeInsets.only(top: 6.0, left: 4.0, right: 4.0, bottom: 4.0),
+                  child: Text(
+                    widget.video.title,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 12.0, // Adjusted font size for small cards
+                      fontWeight: FontWeight.w500,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
             ],
           ),
         ),

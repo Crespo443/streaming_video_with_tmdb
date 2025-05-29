@@ -25,9 +25,9 @@ class VideoModelAdapter extends TypeAdapter<VideoModel> {
       videoUrl: fields[5] as String,
       categories: (fields[6] as List).cast<String>(),
       type: fields[7] as String,
-      rating: fields[8] as double,
-      tags: (fields[9] as List).cast<String>(),
-      releaseDate: fields[10] as String,
+      duration: fields[8] as String,
+      rating: fields[9] as double,
+      tags: (fields[10] as List).cast<String>(),
     );
   }
 
@@ -52,11 +52,11 @@ class VideoModelAdapter extends TypeAdapter<VideoModel> {
       ..writeByte(7)
       ..write(obj.type)
       ..writeByte(8)
-      ..write(obj.rating)
+      ..write(obj.duration)
       ..writeByte(9)
-      ..write(obj.tags)
+      ..write(obj.rating)
       ..writeByte(10)
-      ..write(obj.releaseDate);
+      ..write(obj.tags);
   }
 
   @override
