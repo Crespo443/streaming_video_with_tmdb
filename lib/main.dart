@@ -18,6 +18,7 @@ void main() async {
 
   Hive.registerAdapter(VideoModelAdapter());
   Hive.registerAdapter(ReviewModelAdapter());
+
   
   await Hive.openBox<VideoModel>('favorites');
   await Hive.openBox<ReviewModel>('reviews');

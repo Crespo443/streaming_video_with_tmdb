@@ -77,8 +77,7 @@ class VideoProvider with ChangeNotifier {
     }
     notifyListeners();
   }
-
-  // Fungsi ini mendapatkan SEMUA kategori unik dari semua video
+  
   List<String> getCategories() {
     Set<String> uniqueCategories = {};
     for (var video in _allVideos) {

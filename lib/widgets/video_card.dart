@@ -13,7 +13,7 @@ class VideoCard extends StatefulWidget {
     super.key,
     required this.video,
     this.width = 130,
-    this.height = 200,
+    this.height = 230,
     this.showTitle = true,
   });
 
